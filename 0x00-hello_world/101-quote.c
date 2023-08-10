@@ -1,4 +1,5 @@
 #include <unistd.h>
+
 /**
  * main -Entry point
  *
@@ -6,13 +7,14 @@
  *
  * Return: always 1(error).
  *
- * **/
+ *
+**/
+
 
 
 int main(void)
-{
-	char  sentence[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+{	char mina[] = "and that piece of art is useful\" -Dora Korpar, 2015-10-19\n";
 
-	write(1, sentence, 59);
+	write(1, mina, 59);
 	return (1);
 }
