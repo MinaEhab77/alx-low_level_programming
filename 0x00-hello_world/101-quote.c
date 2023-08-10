@@ -13,8 +13,8 @@
 
 
 int main(void)
-{	char mina[] = "and that piece of art is useful\" -Dora Korpar, 2015-10-19\n";
+{	char mia[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
 
-	write(1, mina, 59);
+	write(1, mia, 59);
 	return (1);
 }
