@@ -17,6 +17,7 @@ while (CH >= 'a')
 {
 putchar(CH);
 CH--;
+putchar('\n');
 }
 return (0);
 }
