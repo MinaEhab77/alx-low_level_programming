@@ -12,7 +12,7 @@ int main(void)
 int i = 0, k;
 while (i < 99)
 {
-k = 0;
+k = i;
 while (k < 99)
 {
 if (i != k)
