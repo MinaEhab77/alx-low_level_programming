@@ -25,8 +25,8 @@ putchar(k + '0');
 putchar(s + '0');
 if (i + s + k != 24)
 {
-putchar(' ');
 putchar(',');
+putchar(' ');
 }
 }
 s++;
