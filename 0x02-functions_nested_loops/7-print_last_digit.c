@@ -10,7 +10,11 @@
 
 int print_last_digit(int a)
 {
-int digit;
-digit = a % 10;
-return (digit);
+int ldigit;
+if (a < 0)
+ldigit = -1 * (a % 10);
+else
+ldigit = a % 10;
+_putchar(ldigit + 48);
+return (ldigit);
 }
