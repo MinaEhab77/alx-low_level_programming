@@ -1,16 +1,12 @@
 #include "main.h"
 /**
- * main - Entry point
- *
- * Description: 'the program's description'
- *
- * Return: Always 0 (Success)
+ * print_alphabet -  means katsh kadr fl alolo
  */
 
 void print_alphabet(void)
 {
-	int ch;
-    for (ch = 'a'; ch <= 'z'; ch++)
-         _putchar(ch);
-    _putchar('\n');
+int ch;
+for (ch = 'a'; ch <= 'z'; ch++)
+_putchar(ch);
+_putchar('\n');
 }
