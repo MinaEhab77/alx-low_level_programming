@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_abs - heb nadya w heb lolo
+ * _abs - heb nadya w heb lolo
  *
  * @a: checks the input of function
  *
