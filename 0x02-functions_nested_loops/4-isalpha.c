@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _islower - heb nadya w heb lolo
+ * _isalpha- heb nadya w heb lolo
  *
  * @c: checks the input of function
  *
