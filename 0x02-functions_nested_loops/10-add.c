@@ -12,7 +12,6 @@
 
 int add(int a, int b)
 {
-n = add(a, b);
-printf("%d\n", n);
-return (0);
+int sum = add(a, b);
+return (sum);
 }
