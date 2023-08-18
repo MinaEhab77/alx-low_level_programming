@@ -1,4 +1,4 @@
-#include "stdio.h"
+#include "main.h"
 
 /**
  * print_most_numbers - checks if the letter is uppercase or not
