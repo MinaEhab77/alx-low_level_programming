@@ -16,11 +16,11 @@ for (k = 0; k <= 14; k++)
 j = k;
 if (k > 9)
 {
-putchar(1 + 48);
+_putchar(1 + 48);
 j = k % 10;
 }
-putchar(j + 48);
+_putchar(j + 48);
 }
-putchar('\n');
+_putchar('\n');
 }
 }
