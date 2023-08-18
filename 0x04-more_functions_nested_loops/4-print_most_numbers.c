@@ -2,8 +2,6 @@
 
 /**
  * print_most_numbers - checks if the letter is uppercase or not
- *
- * Return: 0 if not upper and 1 if upper
 */
 void print_most_numbers(void)
 {
