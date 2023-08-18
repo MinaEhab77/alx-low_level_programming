@@ -4,8 +4,6 @@
  * print_diagonal - checks if the letter is uppercase or not
  *
  * @n: mlksh dawaa
- *
- * Return: 0 if not upper and 1 if upper
 */
 
 void print_diagonal(int n)
