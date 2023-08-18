@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * int _isupper - checks if the letter is uppercase or not
+ * _isupper - checks if the letter is uppercase or not
  *
  * @c: input for alphabet
  *
@@ -11,8 +11,8 @@
 int _isupper(int c)
 {
 int c;
-if (64 < c < 91)
-return(1);
+if (c >= 65 && c <= 90)
+return (1);
 else
 return (0);
 }
