@@ -37,6 +37,11 @@ q = malloc((len1 + len2) *sizeof(char) + 1);
 if (q == NULL)
 return (NULL);
 for (i = 0; i <= len2; i++)
-s1[len1 + i] = s2[i];
+{
+if (i < len1)
+m[i] = s1[i];
+else
+m[i] = s2[i - len1];
+}
 return (q);
 }
