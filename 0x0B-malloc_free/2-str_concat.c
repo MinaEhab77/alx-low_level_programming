@@ -43,6 +43,5 @@ q[i] = s1[i];
 else
 q[i] = s2[i - len1];
 }
-q[i] = '\0';
 return (q);
 }
