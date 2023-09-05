@@ -36,12 +36,13 @@ len2 = _strlen(s2);
 q = malloc((len1 + len2) *sizeof(char) + 1);
 if (q == NULL)
 return (NULL);
-for (i = 0; i <= len2; i++)
+for (i = 0; i <= len1 + len2; i++)
 {
 if (i < len1)
 q[i] = s1[i];
 else
 q[i] = s2[i - len1];
 }
+q[i] = '\0';
 return (q);
 }
