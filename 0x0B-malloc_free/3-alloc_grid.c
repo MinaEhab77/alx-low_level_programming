@@ -1,44 +1,42 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * alloc_grid - nested loop to make grid
- * @width: width input
- * @height: height input
- * Return: pointer to 2 dim. array
+ * str_concat - get ends of input and add together for size
+ * @s1: input one to concat
+ * @s2: input two to concat
+ * Return: concat of s1 and s2
  */
-int **alloc_grid(int width, int height)
-{
-	int **mee;
-	int x, y;
 
-	if (width <= 0 || height <= 0)
-		return (NULL);
+int **alloc_grid(int width, int height) {
+    // Check for invalid width or height
+    if (width <= 0 || height <= 0) {
+        return NULL;
+    }
 
-	mee = malloc(sizeof(int *) * height);
+    // Allocate memory for the rows
+    int **grid = (int **)malloc(height * sizeof(int *));
+    if (grid == NULL) {
+        return NULL; // Memory allocation failed
+    }
 
-	if (mee == NULL)
-		return (NULL);
+    // Allocate memory for the columns of each row
+    for (int i = 0; i < height; i++) {
+        grid[i] = (int *)malloc(width * sizeof(int));
+        if (grid[i] == NULL) {
+            // Memory allocation for a row failed
+            // Free the memory allocated so far and return NULL
+            for (int j = 0; j < i; j++) {
+                free(grid[j]);
+            }
+            free(grid);
+            return NULL;
+        }
 
-	for (x = 0; x < height; x++)
-	{
-		mee[x] = malloc(sizeof(int) * width);
+        // Initialize each element to 0
+        for (int j = 0; j < width; j++) {
+            grid[i][j] = 0;
+        }
+    }
 
-		if (mee[x] == NULL)
-		{
-			for (; x >= 0; x--)
-				free(mee[x]);
-
-			free(mee);
-			return (NULL);
-		}
-	}
-
-	for (x = 0; x < height; x++)
-	{
-		for (y = 0; y < width; y++)
-			mee[x][y] = 0;
-	}
-
-	return (mee);
+    return grid;
 }
-
