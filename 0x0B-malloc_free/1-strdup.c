@@ -18,7 +18,7 @@ return (NULL);
 for (size = 0; str[size]; size++)
 ;
 
-strr = malloc(size * sizeof(*str));
+strr = malloc(size * sizeof(*str) + 1);
 
 if (strr == NULL)
 return (NULL);
