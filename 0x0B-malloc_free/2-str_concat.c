@@ -33,7 +33,7 @@ if (s2 == NULL)
 s2 = "";
 len1 = _strlen(s1);
 len2 = _strlen(s2);
-q = malloc((len1 + len2)*sizeof(*s1) + 1);
+q = malloc((len1 + len2) *sizeof(char) + 1);
 if (q == NULL)
 return (NULL);
 for (i = 0; i <= len2; i++)
