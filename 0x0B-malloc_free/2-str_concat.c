@@ -39,9 +39,9 @@ return (NULL);
 for (i = 0; i <= len2; i++)
 {
 if (i < len1)
-m[i] = s1[i];
+q[i] = s1[i];
 else
-m[i] = s2[i - len1];
+q[i] = s2[i - len1];
 }
 return (q);
 }
