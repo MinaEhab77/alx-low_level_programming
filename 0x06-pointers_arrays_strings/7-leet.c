@@ -11,7 +11,7 @@ char s1[] = "aAeEoOtTlL";
 char s2[] = "4433007711";
 
 int i = 0;
-while (*s != '\0')
+while (s[i] != '\0')
 {
 int j = 0;
 
@@ -23,7 +23,6 @@ s[i] = s2[j];
 }
 j++;
 }
-s++;
 i++;
 }
 return (s);
