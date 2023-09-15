@@ -22,4 +22,4 @@ n--;
 }
 *dest_ptr = '\0';
 return dest;
-}{
+}
