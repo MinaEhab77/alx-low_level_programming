@@ -7,16 +7,21 @@
  *
  * Return: dest
  */
-char *_strncpy(char *dest, char *src, int n)
+char *_strncpy(char *dest, const char *src, int n)
 {
 char *dest_ptr = dest;
 while (*src != '\0' && n > 0)
 {
-*dest = *src;
-dest++;
+*dest_ptr = *src;
+dest_ptr++;
 src++;
 n--;
 }
-*dest = '\0';
-return (dest_ptr);
+while (n > 0)
+{
+*dest_ptr = '\0';
+dest_ptr++;
+n--;
+}
+return (dest);
 }
