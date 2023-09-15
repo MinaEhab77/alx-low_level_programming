@@ -4,27 +4,25 @@
  * @s: input value
  * Return: pointer
  */
-
 char *leet(char *s)
 {
+char *s_ptr = s;
 char s1[] = "aAeEoOtTlL";
 char s2[] = "4433007711";
-
 int i = 0;
-while (s[i] != '\0')
+while(*s != '\0')
 {
 int j = 0;
-
-while (j < 10)
+while(j < 10)
 {
-if (s[i] == s1[j])
+if(s[i] == s1[j])
 {
 s[i] = s2[j];
 }
 j++;
 }
 i++;
+s++;
 }
-return (s);
+return (s_ptr);
 }
-
