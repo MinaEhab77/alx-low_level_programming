@@ -6,28 +6,17 @@
  *
  * Return: void
  */
-char *_strcat(char *dest, char *src)
+char* _strcat(char* dest, const char* src)
 {
-char *dest_ptr = dest;
-int i = 0;
-while(*dest != '\0')
+char* dest_ptr = dest;
+while (*dest_ptr != '\0')
+dest_ptr++;
+while (*src != '\0')
 {
-i++;
-dest++;
-}
-
-char *src_ptr = src;
-int j;
-while(*src != '\0')
-{
-j++;
+*dest_ptr = *src;
+dest_ptr++;
 src++;
 }
-int x = 0;
-for(x = 0; x <= j; x++)
-{
-dest_ptr[i + x] = src_ptr[x];
-}
-
-return dest_ptr;
+*dest_ptr = '\0';
+return dest;
 }
