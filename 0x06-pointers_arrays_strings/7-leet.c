@@ -10,12 +10,12 @@ char *s_ptr = s;
 char s1[] = "aAeEoOtTlL";
 char s2[] = "4433007711";
 int i = 0;
-while(*s != '\0')
+while (*s != '\0')
 {
 int j = 0;
-while(j < 10)
+while (j < 10)
 {
-if(s[i] == s1[j])
+if (s[i] == s1[j])
 {
 s[i] = s2[j];
 }
