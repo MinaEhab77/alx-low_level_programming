@@ -3,28 +3,26 @@
 #include "lists.h"
 
 /**
- * add_node - adds new node
- * @head: double pointer list_t list
- * @string: new string
- * Return: the address of the new element
+ * add_node - adds new kofta beginning of a linked list
+ * @head: the list_t list
+ * @str: estring to add in node
+ * Return: address of the new elem
  */
-list_t *add_node(list_t **head, const char *string)
+
+
+list_t *add_node(list_t **head, const char *str)
 {
-	list_t *new;
-	unsigned int len = 0;
+list_t *new;
+unsigned int len = 0;
 
-	while (string[len])
-		len++;
-
-	new = malloc(sizeof(list_t));
-	if (!new)
-		return (NULL);
-
-	new->string = strdup(string);
-	new->len = len;
-	new->next = (*head);
-	(*head) = new;
-
-	return (*head);
+while (str[len])
+len++;
+new = malloc(sizeof(list_t));
+if (!new)
+return (NULL);
+new->str = strdup(str);
+new->len = len;
+new->next = (*head);
+(*head) = new;
+return (*head);
 }
-
