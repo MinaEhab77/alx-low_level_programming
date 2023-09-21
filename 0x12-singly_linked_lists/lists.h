@@ -3,7 +3,7 @@
 
 /**
  * struct list_s - single ll
- * @str: string to the 
+ * @str: string to the
  * @len: length of the string
  * @next: points to the next node
  * Description: singly ll
