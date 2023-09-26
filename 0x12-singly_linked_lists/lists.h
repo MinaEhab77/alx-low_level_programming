@@ -2,7 +2,7 @@
 #define LISTS_H
 
 /**
- * struct list_s - single ll
+ * struct node - single ll
  * @str: string to the
  * @len: length of the string
  * @next: points to the next node
@@ -10,11 +10,11 @@
  */
 
 
-typedef struct list_s
+typedef struct node
 {
 char *str;
 unsigned int len;
-struct list_s *next;
+struct node *next;
 } list_t;
 
 
