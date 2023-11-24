@@ -12,9 +12,9 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 	unsigned long int curr;
 	unsigned long int exc = n ^ m;
 
-	for (a = 63; a >= 0; a--)
+	for (k = 63; k >= 0; k--)
 	{
-		curr = exc >> a;
+		curr = exc >> k;
 		if (curr & 1)
 		{
 			count_bit++;
